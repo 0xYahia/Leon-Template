@@ -411,8 +411,9 @@ background-color: white;
 .contact .info .social{
  padding: 10px;
 }
-.contact .info .social i{
+.contact .info .social a{
     margin-left: 5px;
+    font-size: 20px;
     color: var(--secondary-color);
 }
 /* End Contact */
@@ -423,11 +424,39 @@ background-color: white;
     text-align: center;
     color: white;
     font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "first first first first . . . . last last last last";
+}
+.footer div:first-child{
+    grid-area: first;
+}
+
+.footer div:first-child i {
+    color: red;
+}
+.footer div:first-child p{
+    margin: 0 0 10px;
+}
+.footer div:last-child {
+    font-weight: bold;
+    grid-area: last;
 }
 .footer span{
-    font-weight: bold;
     color: var(--main-color);
 }
+@media (max-width: 991px){
+    .footer{
+        grid-template-areas: "first first first first first fisrt last last last last last last";
+    }
+}
+@media (max-width: 767px){
+    .footer{
+        display: block;
+    }
+}
+
+
 /* End Footer */
 
 
