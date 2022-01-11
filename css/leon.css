@@ -70,8 +70,9 @@ html{
 
 /* Start Header */
 header{
-    padding: 20px;
+    padding: 10px;
 }
+
 header .container{
     display: flex;
     justify-content: space-between;
