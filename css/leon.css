@@ -12,7 +12,7 @@
 /* Start Global Rules */
 /* Start Components */
 .special-heading{
-font-size: 70px;
+font-size: 100px;
 color: #ebeced;
 text-align: center;
 margin: 0;
@@ -453,6 +453,9 @@ background-color: white;
     .footer{
         display: block;
     }
+    .special-heading{
+        font-size: 50px;
+        }
 }
 
 
