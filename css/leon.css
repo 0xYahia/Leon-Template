@@ -70,7 +70,7 @@ html{
 
 /* Start Header */
 header{
-    padding: 10px;
+    padding: 20px;
 }
 
 header .container{
@@ -86,7 +86,7 @@ header .container .logo{
 header .container .links{
     position: relative;
 }
-header .container .links .icon:hover span:nth-child(2){
+header .container .links:hover .icon span:nth-child(2){
     width: 100%;
 }
 
@@ -121,12 +121,12 @@ header .links ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: var(--section-background);
     position: absolute;
     right: 0;
-    background-color: var(--section-background);
     top: calc(100% + 15px);
-    min-width: 200px;
     display: none;
+    min-width: 200px;
 }
 header .links:hover ul{
     display: block;
@@ -152,16 +152,14 @@ header .links ul li:hover a{
     padding-left: 15px;
 }
 /* مش شغاله */
-/* header .links ul li:not(:last-child) a{
+ header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #ddd;
-} */
+} 
 
 header .links ul li a {
     text-decoration: none;
     color:  #333;
     transition: var(--main-duration);
-    border-bottom: 1px solid #ddd;
-
 }
 
 /* End Header */
